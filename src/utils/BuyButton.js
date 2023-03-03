@@ -79,3 +79,31 @@ export function BuyButtonFF(playerId, paymentMethod, produkBeli, price) {
    };
    return tombolBeli;
 }
+
+export function BuyButtonMLBB(userId, zoneId, paymentMethod, produkBeli, price) {
+   const pesan = `[MOBILE LEGENDS] Permisi, saya mau beli ${produkBeli}, ${userId}(${zoneId}) dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
+
+   const tombolBeli = () => {
+      if (userId === "" || zoneId === "" || paymentMethod === "" || produkBeli === "") {
+         // modal alert empty form function
+         const modalEl = document.getElementById("modal");
+         const modalCard = document.getElementById("modal-card");
+
+         modalEl.classList.toggle("flex");
+         modalEl.classList.toggle("hidden");
+         modalCard.scrollIntoView();
+      } else {
+         window.open(`https://api.whatsapp.com/send?phone=6287878079915&text=${pesan}`, "_blank");
+      }
+   };
+
+   // modal alert empty form function
+   window.onclick = function (event) {
+      const modalEl = document.getElementById("modal");
+      if (event.target === modalEl) {
+         modalEl.classList.toggle("flex");
+         modalEl.classList.toggle("hidden");
+      }
+   };
+   return tombolBeli;
+}
