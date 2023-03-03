@@ -33,7 +33,7 @@ function Home() {
             link: "genshin-impact",
          },
          {
-            title: "League of Legends: Wild Rift (X)",
+            title: "League of Legends: Wild Rift",
             imageUrl: lolwricon,
             link: "wild-rift",
          },
