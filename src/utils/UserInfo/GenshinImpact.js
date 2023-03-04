@@ -30,7 +30,7 @@ function GenshinImpact(props) {
                <option value="Asia">Asia</option>
                <option value="America">America</option>
                <option value="Europe">Eropa</option>
-               <option value="TWHKMO">TW, HK, MO</option>
+               <option value="TW, HK, MO">TW, HK, MO</option>
             </select>
          </div>
       </>

@@ -1,5 +1,5 @@
 export function BuyButtonGenshin(uid, server, paymentMethod, produkBeli, price) {
-   const pesan = `[GENSHIN IMPACT] Permisi, saya mau beli ${produkBeli}, ${uid}(${server}) dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
+   const pesan = `[GENSHIN IMPACT] Permisi, saya mau beli ${produkBeli}, UID : ${uid} Server : (${server}) dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
    const tombolBeli = () => {
       if (uid === "" || server === "" || paymentMethod === "" || produkBeli === "") {
          // modal alert empty form function
@@ -26,7 +26,7 @@ export function BuyButtonGenshin(uid, server, paymentMethod, produkBeli, price) 
 }
 
 export function BuyButtonLOLWR(riotid, paymentMethod, produkBeli, price) {
-   const pesan = `[LOL: WILD RIFT] Permisi, saya mau beli ${produkBeli}, ${riotid} dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
+   const pesan = `[LOL: WILD RIFT] Permisi, saya mau beli ${produkBeli}, Riot ID: ${riotid} dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
    const tombolBeli = () => {
       if (riotid === "" || paymentMethod === "" || produkBeli === "") {
          // modal alert empty form function
@@ -53,7 +53,7 @@ export function BuyButtonLOLWR(riotid, paymentMethod, produkBeli, price) {
 }
 
 export function BuyButtonFF(playerId, paymentMethod, produkBeli, price) {
-   const pesan = `[FREE FIRE] Permisi, saya mau beli ${produkBeli}, ${playerId} dengan pembayaran ${paymentMethod} harga Rp. ${price} `;
+   const pesan = `[FREE FIRE] Permisi, saya mau beli ${produkBeli}, Player ID: ${playerId} dengan pembayaran ${paymentMethod} harga Rp. ${price} `;
 
    const tombolBeli = () => {
       if (playerId === "" || paymentMethod === "" || produkBeli === "") {
@@ -81,7 +81,7 @@ export function BuyButtonFF(playerId, paymentMethod, produkBeli, price) {
 }
 
 export function BuyButtonMLBB(userId, zoneId, paymentMethod, produkBeli, price) {
-   const pesan = `[MOBILE LEGENDS] Permisi, saya mau beli ${produkBeli}, ${userId}(${zoneId}) dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
+   const pesan = `[MOBILE LEGENDS] Permisi, saya mau beli ${produkBeli}, User ID:  ${userId}(${zoneId}) dengan pembayaran ${paymentMethod} harga Rp. ${price}`;
 
    const tombolBeli = () => {
       if (userId === "" || zoneId === "" || paymentMethod === "" || produkBeli === "") {
