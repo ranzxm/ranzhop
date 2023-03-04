@@ -7,6 +7,9 @@ import { useState } from "react";
 
 import ribbonPromo from "../images/ribbon-promo.png";
 import qris from "../images/qris-method.png";
+import gopay from "../images/gopay-method.png";
+import shopeepay from "../images/shopeepay-method.png";
+import dana from "../images/dana-method.png";
 import verify from "../images/verify.svg";
 
 export default function ProductForm(props) {
@@ -154,6 +157,17 @@ export function PaymentMethod(props) {
    // 1. price,
    // 2. setPaymentMethod
 
+   const clickPaymentMethod = (methodTitle) => {
+      const verifyPay = document.getElementById("verify-payment");
+      const alertPay = document.getElementById("alert-payment");
+
+      if (props.price === "") {
+         alertPay.classList.remove("hidden");
+      } else {
+         verifyPay.classList.remove("hidden");
+         props.setPaymentMethod("QRIS");
+      }
+   };
    return (
       <>
          <section className="product-form__payment-method my-6 bg-[#2b2b2b] py-2 relative rounded">
@@ -163,30 +177,18 @@ export function PaymentMethod(props) {
                </span>
                <span className="ml-14 font-bold text-xl tracking-wider">Pilih Pembayaran</span>
                <span className="absolute md:right-5 md:top-2 hidden top-0 -right-3" id="alert-payment">
-                  <p className="text-xs sm:w-full text-red-400 w-36">Silahkan pilih produk terlebih dahulu</p>
+                  <p className="text-xs sm:w-full text-red-400 w-36">Silahkan pilih item terlebih dahulu</p>
                </span>
             </h1>
             <ul>
                <li className="my-3 mx-4 border-[1px] border-[#616161] rounded-md">
-                  <a
-                     onClick={(e) => {
-                        e.preventDefault();
-                        const verifyPay = document.getElementById("verify-payment");
-                        const alertPay = document.getElementById("alert-payment");
-
-                        if (props.price === "") {
-                           alertPay.classList.remove("hidden");
-                        } else {
-                           verifyPay.classList.remove("hidden");
-                           props.setPaymentMethod("QRIS");
-                        }
-                     }}
-                     href="@"
-                     className="flex flex-wrap relative overflow-hidden min-h-[72px] px-3 items-center justify-between"
+                  <div
+                     onClick={() => clickPaymentMethod()}
+                     className="flex flex-wrap cursor-pointer relative overflow-hidden min-h-[72px] px-3 items-center justify-between"
                   >
                      <div className="kanan md:basis-3/4 basis-2/3">
                         <figure>
-                           <img src={qris} alt="qris" className="bg-white rounded h-8" />
+                           <img src={qris} alt="methodpayment" className="bg-white rounded h-8" />
                         </figure>
                      </div>
                      <div className="kiri md:basis-1/4 basis-1/3 hidden" id="price-el">
@@ -198,7 +200,12 @@ export function PaymentMethod(props) {
                      <span className="absolute top-3 right-3 hidden" id="verify-payment">
                         <img src={verify} alt="" className="w-6" />
                      </span>
-                  </a>
+                  </div>
+                  <div className="mx-3 italic mb-3 flex gap-2 items-center">
+                     <img src={gopay} alt="" className="w-14 bg-white rounded-lg p-1" />
+                     <img src={shopeepay} alt="" className="w-14 bg-white rounded-lg p-1" />
+                     <img src={dana} alt="" className="w-14 bg-white rounded-lg p-1" />
+                  </div>
                </li>
             </ul>
          </section>

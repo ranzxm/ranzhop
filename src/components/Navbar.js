@@ -1,7 +1,5 @@
 import logoW from "../images/rzl-w.png";
-import { Link } from "react-router-dom";
 // import logoB from "../images/rzl-b.png";
-import searchSVG from "../images/search.svg";
 
 function Navbar() {
    return (

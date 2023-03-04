@@ -26,7 +26,6 @@ function ModalAlert(props) {
                <div className="modal-field px-3 py-3">
                   <ul>
                      {props.alert.map((tes, index) => {
-                        console.log(index);
                         return (
                            <>
                               <li key={index}>

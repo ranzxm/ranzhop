@@ -15,8 +15,8 @@ function ProductListItem(props) {
                }}
             >
                <div className="product-tile__image relative ">
-                  <img src={props.imageUrl} alt="item-image" className="" />
-                  <img src={wave} alt="" className="absolute -bottom-1 " />
+                  <img src={props.imageUrl} alt="itemimage" className="" />
+                  <img src={wave} alt="wave" className="absolute -bottom-1 " />
                </div>
                <h1 className="product-tile__title flex items-center justify-center text-center font-bold tracking-wide my-0 p-2 text-xs sm:text-base">
                   {props.productTitle}

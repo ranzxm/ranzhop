@@ -17,7 +17,7 @@ function ProductDesc(props) {
                   onClick={(e) => {
                      const descProduct = document.getElementById("desc-product");
                      descProduct.classList.toggle("h-[5.5rem]");
-                     if (e.target.innerHTML == "Tampilkan lebih banyak") {
+                     if (e.target.innerHTML === "Tampilkan lebih banyak") {
                         e.target.innerHTML = "Tampilkan lebih sedikit";
                      } else {
                         e.target.innerHTML = "Tampilkan lebih banyak";
