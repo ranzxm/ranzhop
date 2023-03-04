@@ -154,19 +154,19 @@ export function ProductLOLWR() {
       {
          id: "WR663",
          name: "1375 Wild Core",
-         price: 1500000,
+         price: 150000,
          img_url: diamondIMG_LOLWR,
       },
       {
          id: "WR664",
          name: "2400 Wild Core",
-         price: 2500000,
+         price: 250000,
          img_url: diamondIMG_LOLWR,
       },
       {
          id: "WR665",
          name: "4000 Wild Core",
-         price: 4000000,
+         price: 400000,
          img_url: diamondIMG_LOLWR,
       },
    ];
