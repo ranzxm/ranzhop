@@ -35,9 +35,6 @@ function Footer() {
                      </p>
                   </div>
                </div>
-               <div className="sd">
-                  <p></p>
-               </div>
             </div>
          </footer>
       </>

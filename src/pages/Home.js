@@ -5,6 +5,8 @@ import mlbbicon from "../images/mlbb-m4.jpg";
 import fficon from "../images/ff-new.png";
 import giicon from "../images/giicon.jpg";
 import lolwricon from "../images/lolwricon.jpg";
+import valorantico from "../images/valorantico.jpg";
+import aovico from "../images/aovico.png";
 
 import ProductListItem from "../utils/ProductListItem";
 
@@ -36,6 +38,16 @@ function Home() {
             title: "League of Legends: Wild Rift",
             imageUrl: lolwricon,
             link: "wild-rift",
+         },
+         {
+            title: "Arena Of Valor",
+            imageUrl: aovico,
+            link: "arena-of-valor",
+         },
+         {
+            title: "Valorant",
+            imageUrl: valorantico,
+            link: "valorant",
          },
       ],
    };

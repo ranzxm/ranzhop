@@ -24,13 +24,13 @@ export function ProductMLBB() {
          price: 60000,
          img_url: diamondIMG_MLBB,
       },
-      // {
-      //    id: "MLBB664",
-      //    promo: true,
-      //    name: "344 Diamond (312 + 32 Bonus)",
-      //    price: 76000,
-      //    img_url: mlbb50less,
-      // },
+      {
+         id: "MLBB664",
+         promo: true,
+         name: "285 Diamond (260 + 25 Bonus)",
+         price: 68000,
+         img_url: diamondIMG_MLBB,
+      },
       {
          id: "MLBB665",
          name: "468 Diamond + 46 Bonus",

@@ -25,15 +25,11 @@ function ModalAlert(props) {
                </div>
                <div className="modal-field px-3 py-3">
                   <ul>
-                     {props.alert.map((tes, index) => {
-                        return (
-                           <>
-                              <li key={index}>
-                                 <span className=" text-red-500 cursor-default ">&#215;</span> {tes.text}
-                              </li>
-                           </>
-                        );
-                     })}
+                     {props.alert.map((tes, index) => (
+                        <li key={index}>
+                           <span className=" text-red-500 cursor-default ">&#215;</span> {tes.text}
+                        </li>
+                     ))}
                   </ul>
                </div>
             </div>
